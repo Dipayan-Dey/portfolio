@@ -204,10 +204,10 @@
                             <span class="project-date">${project.date}</span>
                             <div class="project-actions">
                                 <button class="action-btn" onclick="event.stopPropagation(); viewProject(${project.id})" title="View Details">👁️</button>
-                                <button class="action-btn" onclick="event.stopPropagation(); editProject(${project.id})" title="Edit Project">✏️</button>
-                                <button class="action-btn" onclick="event.stopPropagation(); duplicateProject(${project.id})" title="Duplicate">📋</button>
+                                <button class="action-btn" onclick="event.stopPropagation(); editProject(${project.id})" title="Edit Project" style="display:none">✏️</button>
+                                <button class="action-btn" onclick="event.stopPropagation(); duplicateProject(${project.id})" title="Duplicate" style="display:none">📋</button>
                                 ${project.github ? `<button class="action-btn" onclick="event.stopPropagation(); window.open('${project.github}', '_blank')" title="GitHub">🔗</button>` : ''}
-                                <button class="action-btn" onclick="event.stopPropagation(); deleteProject(${project.id})" title="Delete">🗑️</button>
+                                <button class="action-btn" onclick="event.stopPropagation(); deleteProject(${project.id})" title="Delete" style="display:none">🗑️</button>
                             </div>
                         </div>
                     </div>
