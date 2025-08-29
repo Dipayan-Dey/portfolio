@@ -60,8 +60,8 @@
                             <img src="${skill.image}" alt="${skill.name}" class="skill-icon" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
                             <div style="display:none; font-size: 2.5rem;">⚡</div>
                             <div class="skill-actions">
-                                <button class="action-btn edit-btn" onclick="openEditModal(${skill.id})">✏️</button>
-                                <button class="action-btn delete-btn" onclick="deleteSkill(${skill.id})">🗑️</button>
+                                <button class="action-btn edit-btn" onclick="openEditModal(${skill.id})"  style="display:none;">✏️</button>
+                                <button class="action-btn delete-btn" onclick="deleteSkill(${skill.id})"  style="display:none;">🗑️</button>
                             </div>
                         </div>
                         <div class="skill-info">
